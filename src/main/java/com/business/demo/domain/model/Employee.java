@@ -22,8 +22,14 @@ public class Employee {
             strategy = GenerationType.SEQUENCE,
             generator = "employee_sequence"
     )
-    private String id;
+    private Integer id;
     private String name;
     private Integer cell;
     private Integer code;
+
+    public Employee(String name, Integer cell, Integer code) {
+        this.name = name;
+        this.cell = cell;
+        this.code = code;
+    }
 }
